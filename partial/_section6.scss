@@ -1,0 +1,36 @@
+.section6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+     flex-direction: column;
+     margin-top: 40px;
+     width: 100%;
+     @media(max-width:700px){
+        display: none;
+    }
+    .sub-section6{
+
+   display: flex;
+   gap: 40px;
+     .div6{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        // width: 20%;
+        height: 50vh;
+        background-color: rgba(128, 128, 128, 0.313);
+        border-radius: 5px;
+
+
+     }
+    }
+
+    img{
+        border-radius: 10%;
+        object-fit: cover;
+        width: 50%;
+    }
+}

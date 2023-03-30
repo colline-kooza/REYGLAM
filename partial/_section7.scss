@@ -1,0 +1,65 @@
+.section7{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_7558.jpg?v=1678367487&width=1500);
+    background-size: contain;
+    background-repeat:round;
+    @media(max-width:700px){
+        background-size: cover;
+    }
+}
+
+@media(max-width:480px){
+    .section7{
+        width: 100vw;
+        height: 100vh;
+        background: url(../BG/use.png);
+        background-size: cover;
+        margin: 0px;
+        padding: 0p;
+        justify-content: end;
+        padding-bottom: 5rem;
+        a{
+            padding: 5px 10px;
+            background: #A36448;
+            color: aliceblue;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width:400px){
+    .section7{
+        width: 100vw;
+        height: 100vh;
+        background: url(../BG/use.png);
+        background-size: cover;
+        margin: 0px;
+        padding: 0p;
+        justify-content: end;
+        padding-bottom: 5rem;
+        footer{
+            display: none;
+        }
+        a{
+            padding: 5px 10px;
+            background: #A36448;
+            color: aliceblue;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

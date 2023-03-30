@@ -1,0 +1,159 @@
+.section2{
+    display: flex;
+    padding: 40px;
+    margin-top: 40px;
+    flex-direction: column;
+    // background-color: red;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .carrier{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h5{
+            margin-top: 30px;
+        }
+        @media(max-width:700px){
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+    }
+    .carrier2{
+        display: flex;
+        gap: 20px;
+        // height: 50%;
+        margin-top: 20px;
+        img{
+            border-radius: 90px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 80%;
+            }
+            @media(max-width:700px){
+                // background-color: green;
+                
+            }
+
+
+    }
+    // .div1{
+        
+    // }
+    .carrier1 {
+        display: flex;
+        gap: 20px;
+        // width: 80%;
+
+        img{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 20px;
+        }
+        @media(max-width:700px){
+            display: flex;
+            // flex-direction: column;
+            gap: 20px;
+            // background-color: yellow;
+        }
+
+    }
+}
+@media(max-width:480px){
+    .section2{
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        .carrier{
+            width: 100%;
+            height: 20%;
+            gap: 7px;
+        }
+        .carrier1{
+            width: 100%;
+            height: 80%;
+            gap: 0px;
+            flex-direction: column; 
+            .dia{
+                background: url(../BG/1.png);
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            .dib{
+                background: url(../BG/2.png);
+            }
+            .dic{
+                background: url(../BG/3.png);
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .div1{
+                width: 100%;
+                height: 33.3%;
+                background-size: cover;
+                img{
+                    display: none;
+                }
+                a{
+                    display: none;  
+                }
+            }
+        }
+        .carrier2{
+           display: none;
+        }
+    }
+}
+@media(max-width:400px){
+    .section2{
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        .carrier{
+            width: 100%;
+            height: 20%;
+            gap: 7px;
+        }
+        .carrier1{
+            width: 100%;
+            height: 80%;
+            gap: 0px;
+            flex-direction: column; 
+            .dia{
+                background: url(../BG/1.png);
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            .dib{
+                background: url(../BG/2.png);
+            }
+            .dic{
+                background: url(../BG/3.png);
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .div1{
+                width: 100%;
+                height: 33.3%;
+                background-size: cover;
+                img{
+                    display: none;
+                }
+                a{
+                    display: none;  
+                }
+            }
+        }
+        .carrier2{
+           display: none;
+        }
+    }
+}

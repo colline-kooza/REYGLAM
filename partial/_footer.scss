@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 30px;
+    background-color: black;
+    padding: 20px;
+    color: aliceblue;
+    @media(max-width:700px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sub-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media(max-width:700px){
+       display: flex;
+
+    }
+}
+}
+@media(max-width:480px){
+    footer{
+        display: none;
+    }
+}
+@media(max-width:400px){
+    footer{
+        display: none;
+    }
+}

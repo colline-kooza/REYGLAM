@@ -1,0 +1,160 @@
+section{
+    display: flex;
+    @media(max-width:700px){
+        height: 100vh;
+        padding: 3px;
+        margin: 0px;
+        background-size: contain;
+       }
+    .text{  
+   display: flex;  
+   z-index: 9999;
+   color: aliceblue;
+   flex-direction: column;
+   justify-content: end;
+   width: 50VW;
+   height: 80vh;
+   padding:20px 3rem;
+   background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_2441.jpg?v=1678284078&width=640);
+   background-size: cover;
+
+   @media(max-width:700px){
+    display: flex;
+    width: 50vw;
+    padding: 8px;
+   }
+
+}
+    .text2{
+        display: flex;  
+        z-index: 9999;
+        color: aliceblue;
+        flex-direction: column;
+        padding:20px 3rem;
+        justify-content: end;
+        width: 50VW;
+        height: 80vh;
+        background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_1451.jpg?v=1678285152&width=700);
+
+
+    @media(max-width:700px){
+            display: flex;
+            width: 50vw;
+            padding: 8px;
+            background-size:auto;
+        
+            
+}
+         }
+        
+}
+
+@media(max-width:480px){
+    section{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        // padding: 15px;
+        .text{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            background: url(../BG/with-img.png);
+            
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
+            
+        }
+        .text2{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            
+            border-radius: 10px;
+            background: url(../BG/with\ makup.png);
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
+
+        }
+    }
+}
+
+@media(max-width:400px){
+    section{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        // padding: 15px;
+        .text{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            background: url(../BG/with-img.png);
+            
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
+            
+        }
+        .text2{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            
+            border-radius: 10px;
+            background: url(../BG/with\ makup.png);
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
+
+        }
+    }
+}

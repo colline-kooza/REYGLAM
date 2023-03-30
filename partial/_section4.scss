@@ -1,0 +1,71 @@
+.section4{
+    margin-top: 40px;
+    width: 100%;
+    height: 100vh;
+    @media(max-width:700px){
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card1{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_3489.jpg?v=1677242082&width=600);
+        background-size: cover;
+        @media(max-width:700px){
+            width: 100%;
+            height: 50vh;
+            background-size:cover;
+        }
+
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: url(../VICTIMS.jpg);
+        background-size: cover;
+        width: 30%;
+        @media(max-width:700px){
+            height: 50vh;
+            width: 100%;
+            background-size: cover;
+
+        }
+
+    }
+    .card3{
+        width: 30%;
+        @media(max-width:700px){
+            display: none;
+            background-color: aqua;
+        }
+
+
+        .sub-card{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            // background-color: aqua;
+            background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_5459.jpg?v=1678365722&width=400);
+            background-size: cover;
+        }
+        .sub-card2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 50%;
+            // background-color: red;
+            background: url(../wat.jpg);
+        }
+    }
+}
