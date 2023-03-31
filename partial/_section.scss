@@ -14,7 +14,7 @@ section{
    justify-content: end;
    width: 50VW;
    height: 80vh;
-   padding:20px 3rem;
+   padding:20px 5rem;
    background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_2441.jpg?v=1678284078&width=640);
    background-size: cover;
 
@@ -30,7 +30,7 @@ section{
         z-index: 9999;
         color: aliceblue;
         flex-direction: column;
-        padding:20px 3rem;
+        padding:20px 5rem;
         justify-content: end;
         width: 50VW;
         height: 80vh;
@@ -48,7 +48,60 @@ section{
          }
         
 }
+@media(max-width:768px){
+    section{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        // padding: 15px;
+        .text{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            background: url(../BG/with-img.png);
+            
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
+            
+        }
+        .text2{
+            width: 100%;
+            height: 50%;
+            align-items: center;
+            padding: 25px;
+            color: rgba(0, 0, 0, 0);
+            
+            border-radius: 10px;
+            background: url(../BG/with\ makup.png);
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            align-items: end;
+            a{
+                font-weight: bolder;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 7px 10px;
+                color: aliceblue;
+                background: #251916;
+                border-radius: 25px;
+            }
 
+        }
+    }
+}
 @media(max-width:480px){
     section{
         flex-direction: column;

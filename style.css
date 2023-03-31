@@ -6,6 +6,7 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  position: relative;
   padding: 50px;
 }
 @media (max-width: 700px) {
@@ -16,11 +17,16 @@ body {
 
 header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 0rem;
   background-color: #000000;
+  z-index: 99999;
 }
 header i {
   color: aliceblue;
@@ -38,17 +44,13 @@ header .header1 {
   width: 90vw;
   justify-content: space-between;
 }
-header .link {
+header .header1 .link {
   display: flex;
   gap: 30px;
 }
-header .header2 {
-  display: flex;
-  width: 90vw;
-  justify-content: space-between;
-  margin-top: 20px;
+header .header1 .link a:hover {
+  color: aqua;
 }
-
 section {
   display: flex;
 }
@@ -68,7 +70,7 @@ section .text {
   justify-content: end;
   width: 50VW;
   height: 80vh;
-  padding: 20px 3rem;
+  padding: 20px 5rem;
   background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_2441.jpg?v=1678284078&width=640);
   background-size: cover;
 }
@@ -84,7 +86,7 @@ section .text2 {
   z-index: 9999;
   color: aliceblue;
   flex-direction: column;
-  padding: 20px 3rem;
+  padding: 20px 5rem;
   justify-content: end;
   width: 50VW;
   height: 80vh;
@@ -99,6 +101,55 @@ section .text2 {
   }
 }
 
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  section .text {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding: 25px;
+    color: rgba(0, 0, 0, 0);
+    background: url(../BG/with-img.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: end;
+  }
+  section .text a {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 7px 10px;
+    color: aliceblue;
+    background: #251916;
+    border-radius: 25px;
+  }
+  section .text2 {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding: 25px;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background: url(../BG/with\ makup.png);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: end;
+  }
+  section .text2 a {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 7px 10px;
+    color: aliceblue;
+    background: #251916;
+    border-radius: 25px;
+  }
+}
 @media (max-width: 480px) {
   section {
     flex-direction: column;
@@ -250,53 +301,6 @@ section .text2 {
   }
 }
 
-@media (max-width: 480px) {
-  .section2 {
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-  }
-  .section2 .carrier {
-    width: 100%;
-    height: 20%;
-    gap: 7px;
-  }
-  .section2 .carrier1 {
-    width: 100%;
-    height: 80%;
-    gap: 0px;
-    flex-direction: column;
-  }
-  .section2 .carrier1 .dia {
-    background: url(../BG/1.png);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-  .section2 .carrier1 .dib {
-    background: url(../BG/2.png);
-  }
-  .section2 .carrier1 .dic {
-    background: url(../BG/3.png);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  .section2 .carrier1 .div1 {
-    width: 100%;
-    height: 33.3%;
-    background-size: cover;
-  }
-  .section2 .carrier1 .div1 img {
-    display: none;
-  }
-  .section2 .carrier1 .div1 a {
-    display: none;
-  }
-  .section2 .carrier2 {
-    display: none;
-  }
-}
 @media (max-width: 400px) {
   .section2 {
     width: 100vw;
@@ -374,7 +378,7 @@ section .text2 {
   align-items: center;
   color: white;
   background: url(https://media.istockphoto.com/id/1331637318/photo/portrait-of-young-afro-woman-with-bright-make-up.jpg?b=1&s=170667a&w=0&k=20&c=OYpOKgnC8xVk43A3irW0VkVHnYrmwcd5QQlaIZJDyig=);
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
   padding: 50px;
   width: 100%;
@@ -457,7 +461,8 @@ section .text2 {
 }
 
 .section5 {
-  height: 70%;
+  display: flex;
+  height: 100%;
   margin-top: 40px;
   background-color: black;
   color: aliceblue;
@@ -478,6 +483,14 @@ section .text2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.section5 .sub-section5 {
+  width: 100%;
+  height: 80%;
+}
+.section5 .sub-text {
+  width: 100%;
+  height: 20%;
 }
 
 .section6 {
