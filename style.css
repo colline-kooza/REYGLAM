@@ -70,11 +70,11 @@ section .text {
   justify-content: end;
   width: 50VW;
   height: 80vh;
-  padding: 20px 5rem;
+  padding: 20px 3rem;
   background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_2441.jpg?v=1678284078&width=640);
   background-size: cover;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   section .text {
     display: flex;
     width: 50vw;
@@ -92,7 +92,7 @@ section .text2 {
   height: 80vh;
   background: url(https://cdn.shopify.com/s/files/1/0491/7461/0076/files/IMG_1451.jpg?v=1678285152&width=700);
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   section .text2 {
     display: flex;
     width: 50vw;
